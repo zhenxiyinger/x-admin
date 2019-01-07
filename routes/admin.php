@@ -9,7 +9,7 @@ Route::namespace('Admin')->group(function () {
             Route::any('add','AuthAdminsController@add' )->name('auth_admins_add');
         });
         Route::get('/', 'IndexController@index')->name('admin_index');
-        Route::get('/welcome', 'IndexController@welcome')->name('admin_welcome');
+        Route::get('/welcome', 'IndexController@main')->name('admin_main');
     });
 });
 

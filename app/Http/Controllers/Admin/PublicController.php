@@ -26,7 +26,7 @@ class PublicController extends Controller
 //            return redirect()->intended('dashboard');
             return $result;
         } else {
-            return View('admin.login');
+            return View('admin.public.login');
         }
     }
 
