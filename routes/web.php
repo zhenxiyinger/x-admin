@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::namespace('Web')->group(function (){
     Route::get('/index', 'IndexController@index');
 });
+

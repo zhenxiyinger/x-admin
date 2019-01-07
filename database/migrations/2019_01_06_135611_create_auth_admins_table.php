@@ -17,8 +17,11 @@ class CreateAuthAdminsTable extends Migration
             $table->increments('id');
             $table->string('username','64');
             $table->string('password','64');
-            $table->string('salt','8');
+            $table->string('real_name','64');
+            $table->string('mobile','20');
+            $table->string('last_ip','20');
             $table->tinyInteger('status');
+            $table->rememberToken();
             $table->timestamps();
         });
     }

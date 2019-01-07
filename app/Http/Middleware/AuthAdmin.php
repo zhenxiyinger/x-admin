@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Auth;
 
 class AuthAdmin
 {
@@ -15,8 +16,8 @@ class AuthAdmin
      */
     public function handle($request, Closure $next)
     {
-        if ($request->session()->get('admin_id', '-1') == '-1') {
-            return redirect('/admin/login');
+        if (Auth::guard('admin')->guest()) {
+            return redirect()->route('admin_login');
         }
 
         return $next($request);
