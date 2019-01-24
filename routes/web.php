@@ -17,5 +17,8 @@ Route::get('/', function () {
 
 Route::namespace('Web')->group(function (){
     Route::get('/index', 'IndexController@index');
+
+    Route::any('/test', 'IndexController@test')->name('test');
+    Route::any('/tt', 'TestController@index')->name('tt');
 });
 

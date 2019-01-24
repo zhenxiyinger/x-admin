@@ -28,9 +28,6 @@
         <table class="layui-table">
             <thead>
             <tr>
-                <th>
-                    <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
-                </th>
                 <th>ID</th>
                 <th>用户名</th>
                 <th>真实姓名</th>
@@ -43,14 +40,11 @@
             <tbody>
             @foreach($admin_list as $admin)
             <tr>
-                <td>
-                    <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
-                </td>
                 <td>{{ $admin['id'] }}</td>
                 <td>{{ $admin['username'] }}</td>
                 <td>{{ $admin['real_name'] }}</td>
                 <td>{{ $admin['mobile'] }}</td>
-                <td>超级管理员</td>
+                <td>{{ $admin->getRoleNames()[0] }}</td>
                 <td>{{ $admin['created_at'] }}</td>
                 <td class="td-status">
                     <span class="layui-btn layui-btn-normal layui-btn-mini">已启用</span></td>

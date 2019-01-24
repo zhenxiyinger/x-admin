@@ -11,9 +11,9 @@ class PublicController extends Controller
     public function login(Request $request)
     {
         if ($request->isMethod('post')) {
-            $authData = $request->only(['username', 'password']);
-            $authData['status'] = '1';
-            if (Auth::guard('admin')->attempt($authData, false)) {
+            $paramsData = $request->only(['username', 'password']);
+            $paramsData['status'] = '1';
+            if (Auth::guard('admin')->attempt($paramsData, false)) {
                 $result = array(
                     'status' => 1
                 );

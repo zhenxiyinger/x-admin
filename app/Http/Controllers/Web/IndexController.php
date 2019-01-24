@@ -5,9 +5,6 @@ namespace App\Http\Controllers\Web;
 use App\Models\AuthAdmins;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\DB;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
 
 class IndexController extends Controller
 {
@@ -18,6 +15,13 @@ class IndexController extends Controller
             ->first();
         $permissions = $admin_data->getAllPermissions();
         dump($permissions);
+    }
+
+    public function test(Request $request){
+        $res = [
+           'cash_url'=>'http://47.104.232.195:21111/credit/web'
+        ] ;
+        return View('test',$res);
     }
 
 }

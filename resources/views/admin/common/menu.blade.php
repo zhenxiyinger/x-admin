@@ -114,7 +114,7 @@
                         </a>
                     </li >
                     <li>
-                        <a _href="admin-role.html">
+                        <a _href="{{ route('auth_roles_index') }}">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>角色管理</cite>
                         </a>
