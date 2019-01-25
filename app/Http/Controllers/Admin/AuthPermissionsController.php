@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
 
 class AuthPermissionsController extends Controller
 {
@@ -24,7 +23,7 @@ class AuthPermissionsController extends Controller
             $this->validate($request, [
                 'name' => 'required|max:40',
             ]);
-            Role::create(['name' => $request['name'], 'guard_name' => 'admin']);
+            Permission::create(['name' => $request['name'], 'guard_name' => 'admin']);
             $res = array(
                 'status' => 1
             );

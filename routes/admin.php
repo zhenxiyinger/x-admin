@@ -12,6 +12,10 @@ Route::namespace('Admin')->group(function () {
             Route::any('index','AuthRolesController@index')->name('auth_roles_index');
             Route::any('add','AuthRolesController@add' )->name('auth_roles_add');
         });
+        Route::prefix('auth_permissions')->group(function () {
+            Route::any('index','AuthPermissionsController@index')->name('auth_permissions_index');
+            Route::any('add','AuthPermissionsController@add' )->name('auth_permissions_add');
+        });
 
         Route::get('/', 'IndexController@index')->name('admin_index');
         Route::get('/welcome', 'IndexController@main')->name('admin_main');

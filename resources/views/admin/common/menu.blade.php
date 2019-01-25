@@ -3,6 +3,33 @@
         <ul id="nav">
             <li>
                 <a href="javascript:;">
+                    <i class="iconfont">&#xe726;</i>
+                    <cite>管理员管理</cite>
+                    <i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a _href="{{ route('auth_admins_index') }}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>管理员列表</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="{{ route('auth_roles_index') }}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>角色管理</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="{{ route('auth_permissions_index') }}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>权限管理</cite>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">
                     <i class="iconfont">&#xe6b8;</i>
                     <cite>会员管理</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
@@ -14,7 +41,7 @@
                             <cite>会员列表</cite>
 
                         </a>
-                    </li >
+                    </li>
                     <li>
                         <a _href="member-del.html">
                             <i class="iconfont">&#xe6a7;</i>
@@ -35,7 +62,7 @@
                                     <cite>会员列表</cite>
 
                                 </a>
-                            </li >
+                            </li>
                             <li>
                                 <a _href="xx.html">
                                     <i class="iconfont">&#xe6a7;</i>
@@ -67,7 +94,7 @@
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>订单列表</cite>
                         </a>
-                    </li >
+                    </li>
                 </ul>
             </li>
             <li>
@@ -82,7 +109,7 @@
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>多级分类</cite>
                         </a>
-                    </li >
+                    </li>
                 </ul>
             </li>
             <li>
@@ -97,40 +124,7 @@
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>三级地区联动</cite>
                         </a>
-                    </li >
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="iconfont">&#xe726;</i>
-                    <cite>管理员管理</cite>
-                    <i class="iconfont nav_right">&#xe697;</i>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a _href="{{ route('auth_admins_index') }}">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>管理员列表</cite>
-                        </a>
-                    </li >
-                    <li>
-                        <a _href="{{ route('auth_roles_index') }}">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>角色管理</cite>
-                        </a>
-                    </li >
-                    <li>
-                        <a _href="admin-cate.html">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>权限分类</cite>
-                        </a>
-                    </li >
-                    <li>
-                        <a _href="admin-rule.html">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>权限管理</cite>
-                        </a>
-                    </li >
+                    </li>
                 </ul>
             </li>
             <li>
@@ -145,7 +139,7 @@
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>拆线图</cite>
                         </a>
-                    </li >
+                    </li>
                     <li>
                         <a _href="echarts2.html">
                             <i class="iconfont">&#xe6a7;</i>
